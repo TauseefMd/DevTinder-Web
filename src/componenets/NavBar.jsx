@@ -20,7 +20,6 @@ const NavBar = () => {
       );
       dispatch(removeUser());
       navigate("/login");
-      console.log(res);
     } catch (error) {
       console.log(error);
     }
@@ -62,7 +61,7 @@ const NavBar = () => {
                   </Link>
                 </li>
                 <li>
-                  <a>Settings</a>
+                  <Link to='/connection'>Connections</Link>
                 </li>
                 <li>
                   <a onClick={handleLogout}>Logout</a>
