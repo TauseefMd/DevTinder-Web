@@ -6,6 +6,7 @@ import { Provider } from "react-redux";
 import appStore from "./utils/appStore";
 import Feed from "./componenets/Feed";
 import Connections from "./componenets/Connections";
+import Requests from "./componenets/Request";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
               <Route path='/login' element={<Login />} />
               <Route path='/profile' element={<Profile />} />
               <Route path='/connection' element={<Connections />} />
+              <Route path='/request' element={<Requests />} />
             </Route>
           </Routes>
         </BrowserRouter>
