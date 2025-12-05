@@ -5,7 +5,7 @@ import { BASE_URL } from "../utils/constant";
 import { useDispatch } from "react-redux";
 import { addUser } from "../utils/userSlice";
 
-const EdutProfile = ({ user }) => {
+const EditProfile = ({ user }) => {
   const [firstName, setFirstName] = useState(user?.firstName);
   const [lastName, setLastName] = useState(user?.lastName);
   const [age, setAge] = useState(user?.age);
@@ -126,4 +126,4 @@ const EdutProfile = ({ user }) => {
   );
 };
 
-export default EdutProfile;
+export default EditProfile;
